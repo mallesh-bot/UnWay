@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", "Noto Sans Telugu", "Noto Sans Devanagari", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Figtree", "Noto Sans Telugu", "Noto Sans Devanagari", ui-sans-serif, sans-serif;
+
+  /* UnWay soft-clay palette: cool mist surfaces, deep slate ink, school-bus yellow */
+  --color-ink: #1f2a37;
+  --color-ink-2: #3c4a5b;
+  --color-ink-3: #64748a;
+  --color-line: #d3dae4;
+  --color-line-2: #dfe5ec;
+  --color-surface: #e7ecf2;   /* the clay everything is pressed out of */
+  --color-panel: #ebeff5;     /* raised surfaces, a touch lighter */
+  --color-bus: #f6b800;
+  --color-bus-deep: #cf9400;
+  --color-bus-soft: #fbedc2;
+  --color-safe: #17905f;
+  --color-safe-soft: #d6efe3;
+  --color-alert: #d0453b;
+  --color-alert-soft: #f8dcd8;
+  --color-warn: #a35f00;
+  --color-warn-soft: #f7e6c8;
+  --color-route: #3566cc;
+  --color-route-soft: #dbe5f7;
+
+  /* neumorphic light and shade */
+  --neu-light: #ffffff;
+  --neu-dark: #b9c3d1;
+  --shadow-card: 9px 9px 20px var(--neu-dark), -9px -9px 20px var(--neu-light);
+  --shadow-soft: 5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light);
+  --shadow-inset: inset 4px 4px 9px var(--neu-dark), inset -4px -4px 9px var(--neu-light);
+  --shadow-pop: 18px 18px 44px rgba(120, 136, 160, .55), -12px -12px 30px rgba(255, 255, 255, .9);
+  --ease-soft: cubic-bezier(.22, 1, .36, 1);
+}
+
+html, body, #root { height: 100%; }
+html { scroll-behavior: auto; }
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, .font-display { font-family: var(--font-display); font-optical-sizing: auto; letter-spacing: -0.015em; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+::selection { background: var(--color-bus); color: var(--color-ink); }
+
+:focus-visible { outline: 3px solid var(--color-route); outline-offset: 3px; border-radius: 10px; }
+
+/* ----- soft UI building blocks ----- */
+.neu { background: var(--color-panel); box-shadow: var(--shadow-card); }
+.neu-soft { background: var(--color-panel); box-shadow: var(--shadow-soft); }
+.neu-inset { background: var(--color-surface); box-shadow: var(--shadow-inset); }
+.neu-press { transition: box-shadow .25s var(--ease-soft), transform .25s var(--ease-soft); }
+.neu-press:active:not(:disabled) { box-shadow: var(--shadow-inset); transform: scale(.985); }
+
+/* Bus number plate: the signature element */
+.plate {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 2.4rem; height: 1.75rem; padding: 0 .55rem;
+  background: var(--color-bus); color: var(--color-ink);
+  border-radius: 7px; font-family: var(--font-display);
+  font-weight: 800; letter-spacing: .02em; font-variant-numeric: tabular-nums;
+  box-shadow: 3px 3px 7px rgba(185, 140, 0, .35), -2px -2px 6px rgba(255, 255, 255, .8), inset 0 -2px 0 var(--color-bus-deep);
+  white-space: nowrap;
+}
+.plate-lg { height: 2.5rem; min-width: 3.4rem; font-size: 1.25rem; }
+
+/* road stripe used on brand surfaces */
+.road {
+  background-image: repeating-linear-gradient(90deg, var(--color-bus) 0 28px, transparent 28px 52px);
+  height: 5px; border-radius: 3px;
+}
+
+/* thin, soft scrollbars */
+* { scrollbar-width: thin; scrollbar-color: #c3ccd8 transparent; }
+
+.maplibregl-popup-content { font-family: var(--font-sans); border-radius: 14px; padding: 10px 12px; box-shadow: var(--shadow-pop); background: var(--color-panel); }
+.maplibregl-popup-tip { display: none; }
+.maplibregl-ctrl-group { border-radius: 12px !important; box-shadow: var(--shadow-soft) !important; background: var(--color-panel) !important; overflow: hidden; }
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .neu, .neu-soft { box-shadow: none; border: 1px solid #ccc; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@keyframes sos-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(208,69,59,.6); } 50% { box-shadow: 0 0 0 10px rgba(208,69,59,0); } }
+.sos-pulse { animation: sos-pulse 1.2s infinite; }
+
+@keyframes live-dot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.live-dot { animation: live-dot 1.6s ease-in-out infinite; }
+
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .5s var(--ease-soft) both; }
+
+/* Lenis smooth scrolling */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+@keyframes drawer-in { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.drawer-in { animation: drawer-in .45s var(--ease-soft) both; }

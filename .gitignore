@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env.local
+.env
+apps/bus/.expo/
+apps/bus/android/
+apps/bus/ios/
+*.tsbuildinfo
+supabase/.temp/
+supabase/.branches/
+website-upload/
+apps/admin/
+apps/web/public/maplibre/
+.unway-sync/

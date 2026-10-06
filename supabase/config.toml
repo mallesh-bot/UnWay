@@ -1,0 +1,24 @@
+# Supabase CLI project config (only the parts UnWay needs).
+project_id = "unway"
+
+[api]
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173"]
+
+# Webhooks and the dispatcher authenticate with their own shared secrets,
+# so the platform JWT check is disabled for them.
+[functions.dispatch]
+verify_jwt = false
+
+[functions.telegram-webhook]
+verify_jwt = false
+
+[functions.whatsapp-webhook]
+verify_jwt = false
+
+[functions.admin-tools]
+verify_jwt = false

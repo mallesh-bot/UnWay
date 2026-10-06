@@ -1,0 +1,9 @@
+{
+  "name": "UnWay School Bus",
+  "short_name": "UnWay",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F3F5F6",
+  "theme_color": "#1E2A32",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

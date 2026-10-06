@@ -1,0 +1,41 @@
+admission_no,first_name,last_name,class,section,guardian_name,guardian_phone,guardian_relation,guardian_language,am_route,am_stop,pm_route,pm_stop,special_care,home_address,home_lat,home_lng
+SPS2401,Aditya,Rao,2,B,Ramesh Rao,9000000001,Father,te,,,,,,"H.No 24-75, Road No. 2, Moosapet, Hyderabad",17.473583,78.424159
+SPS2402,Rohan,Naidu,9,B,Ravi Naidu,9000000002,Father,te,,,,,,"H.No 37-75, Park Lane, Miyapur, Hyderabad",17.493726,78.356396
+SPS2403,Sai Charan,Naidu,9,C,Ravi Naidu,9000000002,Father,te,,,,,,"H.No 37-75, Park Lane, Miyapur, Hyderabad",17.493726,78.356396
+SPS2404,Myra,Naidu,8,B,Mahesh Naidu,9000000003,Father,en,,,,,,"H.No 24-13, Road No. 4, Chandanagar, Hyderabad",17.493482,78.330456
+SPS2405,Navya,Mehta,8,C,Sunitha Mehta,9000000004,Mother,te,,,,,,"H.No 16-11, Temple Street, Moosapet, Hyderabad",17.469725,78.428388
+SPS2406,Pooja,Goud,6,C,Harish Goud,9000000005,Father,te,,,,,,"H.No 3-86, Road No. 4, Nizampet, Hyderabad",17.512945,78.382345
+SPS2407,Varsha,Agarwal,10,B,Kiran Agarwal,9000000006,Father,te,,,,,,"H.No 31-90, Road No. 4, Moosapet, Hyderabad",17.470755,78.425639
+SPS2408,Ananya,Agarwal,6,B,Kiran Agarwal,9000000006,Father,te,,,,,,"H.No 31-90, Road No. 4, Moosapet, Hyderabad",17.470755,78.425639
+SPS2409,Dhruv,Rao,3,B,Prakash Rao,9000000007,Father,te,,,,,Peanut allergy,"H.No 16-51, Park Lane, Moosapet, Hyderabad",17.467344,78.421937
+SPS2410,Aarav,Patel,4,B,Pallavi Patel,9000000008,Mother,hi,,,,,Wears glasses,"H.No 25-30, Road No. 7, Chandanagar, Hyderabad",17.496067,78.331554
+SPS2411,Aarav,Patel,5,A,Pallavi Patel,9000000008,Mother,hi,,,,,,"H.No 25-30, Road No. 7, Chandanagar, Hyderabad",17.496067,78.331554
+SPS2412,Yash,Varma,8,A,Ravi Varma,9000000009,Father,hi,,,,,,"H.No 30-116, Park Lane, Allwyn Colony, Hyderabad",17.503954,78.414531
+SPS2413,Ananya,Gupta,10,A,Padma Gupta,9000000010,Mother,te,,,,,,"H.No 7-1, Road No. 7, Miyapur, Hyderabad",17.493539,78.35467
+SPS2414,Abhiram,Patel,8,A,Arun Patel,9000000011,Father,te,,,,,,"H.No 8-15, 2nd Cross, Miyapur, Hyderabad",17.497913,78.354188
+SPS2415,Myra,Patel,3,A,Venkat Patel,9000000012,Father,en,,,,,Peanut allergy,"H.No 34-3, Main Road, Bachupally, Hyderabad",17.535818,78.362741
+SPS2416,Kavya,Patel,6,C,Sunitha Patel,9000000013,Mother,en,,,,,,"H.No 23-99, Main Road, Chandanagar, Hyderabad",17.496828,78.331907
+SPS2417,Krishna,Chowdary,10,B,Pallavi Chowdary,9000000014,Mother,te,,,,,,"H.No 2-4, Temple Street, Miyapur, Hyderabad",17.499449,78.359547
+SPS2418,Harini,Chowdary,1,C,Radha Chowdary,9000000015,Mother,te,,,,,,"H.No 22-27, 2nd Cross, Moosapet, Hyderabad",17.47364,78.423917
+SPS2419,Varsha,Shetty,7,B,Arun Shetty,9000000016,Father,hi,,,,,,"H.No 12-56, Lake View Road, Nizampet, Hyderabad",17.518677,78.379959
+SPS2420,Sahasra,Shetty,2,A,Arun Shetty,9000000016,Father,hi,,,,,,"H.No 12-56, Lake View Road, Nizampet, Hyderabad",17.518677,78.379959
+SPS2421,Keerthi,Varma,2,C,Arun Varma,9000000017,Father,en,,,,,,"H.No 23-20, Road No. 7, KPHB Colony, Hyderabad",17.490209,78.394239
+SPS2422,Advait,Varma,4,A,Arun Varma,9000000017,Father,en,,,,,,"H.No 23-20, Road No. 7, KPHB Colony, Hyderabad",17.490209,78.394239
+SPS2423,Tanvi,Goud,9,C,Kavitha Goud,9000000018,Mother,te,,,,,,"H.No 4-117, Lake View Road, Miyapur, Hyderabad",17.495344,78.354924
+SPS2424,Diya,Reddy,9,B,Srinivas Reddy,9000000019,Father,en,,,,,,"H.No 10-23, Road No. 7, Bachupally, Hyderabad",17.539255,78.364188
+SPS2425,Varsha,Naidu,2,B,Radha Naidu,9000000020,Mother,en,,,,,Wears glasses,"H.No 18-6, Road No. 4, Allwyn Colony, Hyderabad",17.505246,78.41386
+SPS2426,Varsha,Patel,4,A,Rekha Patel,9000000021,Mother,en,,,,,,"H.No 33-32, Temple Street, Allwyn Colony, Hyderabad",17.505849,78.411595
+SPS2427,Aadhya,Chowdary,6,B,Shalini Chowdary,9000000022,Mother,en,,,,,,"H.No 8-115, Road No. 7, Nizampet, Hyderabad",17.515139,78.381528
+SPS2428,Advait,Naidu,7,B,Venkat Naidu,9000000023,Father,en,,,,,,"H.No 15-21, Park Lane, Bachupally, Hyderabad",17.54274,78.361757
+SPS2429,Sai Charan,Goud,4,A,Lakshmi Goud,9000000024,Mother,en,,,,,,"H.No 25-43, Temple Street, Moosapet, Hyderabad",17.466738,78.423928
+SPS2430,Karthik,Patel,1,B,Kiran Patel,9000000025,Father,te,,,,,,"H.No 26-20, 2nd Cross, Chandanagar, Hyderabad",17.489317,78.331232
+SPS2431,Aditya,Patel,9,B,Rajesh Patel,9000000026,Father,te,,,,,,"H.No 5-34, Road No. 4, Chandanagar, Hyderabad",17.496507,78.330076
+SPS2432,Navya,Naidu,4,B,Sunitha Naidu,9000000027,Mother,te,,,,,Peanut allergy,"H.No 13-120, Temple Street, Bachupally, Hyderabad",17.535346,78.365676
+SPS2433,Harsha,Patel,7,C,Radha Patel,9000000028,Mother,te,,,,,,"H.No 33-61, Main Road, Bachupally, Hyderabad",17.537164,78.366429
+SPS2434,Aditya,Kumar,5,A,Kavitha Kumar,9000000029,Mother,te,,,,,,"H.No 26-45, Road No. 2, Balanagar, Hyderabad",17.477762,78.445462
+SPS2435,Krishna,Iyer,5,B,Shalini Iyer,9000000030,Mother,en,,,,,Peanut allergy,"H.No 3-59, Road No. 7, Nizampet, Hyderabad",17.517322,78.382047
+SPS2436,Abhiram,Iyer,1,A,Shalini Iyer,9000000030,Mother,en,,,,,,"H.No 3-59, Road No. 7, Nizampet, Hyderabad",17.517322,78.382047
+SPS2437,Sneha,Nair,3,C,Radha Nair,9000000031,Mother,te,,,,,,"H.No 16-65, Road No. 2, Bachupally, Hyderabad",17.535009,78.363053
+SPS2438,Abhiram,Nair,5,C,Radha Nair,9000000031,Mother,te,,,,,,"H.No 16-65, Road No. 2, Bachupally, Hyderabad",17.535009,78.363053
+SPS2439,Diya,Varma,3,C,Vijay Varma,9000000032,Father,hi,,,,,Peanut allergy,"H.No 21-93, 2nd Cross, Nizampet, Hyderabad",17.516685,78.383234
+SPS2440,Aadhya,Varma,9,C,Vijay Varma,9000000032,Father,hi,,,,,,"H.No 21-93, 2nd Cross, Nizampet, Hyderabad",17.516685,78.383234
